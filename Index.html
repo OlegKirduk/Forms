@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Forms: practic</title>
+</head>
+<body>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <div>
+            <p>имя</p>
+            <input type="text" placeholder="имя пользователя" name="username" tabindex="1">
+            <p>пароль</p>
+            <input type="password" name="passwort" tabindex="2">
+            <p>телефон</p>
+            <input type="tel" name="telephone" tabindex="3">
+        </div>
+        <br>
+        <div>
+            <p>пол</p>
+            <p><input checked type="radio" name="sex" value="male" tabindex="4">мужской</p>
+            <p><input type="radio" name="sex" value="female" tabindex="4">женский</p>
+        </div>
+        <br>
+        <div>
+            <p>имущество</p>
+            <p><input disabled type="checkbox" name="house" value="yes" tabindex="5">дом</p>
+            <p><input type="checkbox" name="car" value="yes" tabindex="6">машина</p>
+            <p><input checked type="checkbox" name="bicycle" value="yes" tabindex="7">велосипед</p>
+        </div>
+        <br>
+        <div>
+            <p>дополнительная информация</p>
+            <textarea name="optional info"  cols="20" rows="5" tabindex="8"></textarea>
+        </div>
+        <br>
+        <div>
+            <p>прикрепить фото</p>
+            <input type="file" name="photo" tabindex="9">
+        </div>
+        <br>
+        <div>
+            <p>любимый цвет</p>
+            <select name="colour" tabindex="10">
+                <option value="red">красный</option>
+                <option selected value="white">белый</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <p>действия</p>
+            <button type="submit">отправить</button>
+            <button type="reset">очистить</button>
+        </div>
+    </form>    
+</body>
+</html>
